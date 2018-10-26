@@ -27,10 +27,10 @@ class CreateData extends Component {
     return (
       <div className="container">
         <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Create a New Project</h5>
+          <h5 className="grey-text text-darken-3">Create some data</h5>
           <div className="input-field">
             <input type="text" id="title" onChange={this.handleChange} />
-            <label htmlFor="title">Project Title</label>
+            <label htmlFor="title">Title</label>
           </div>
           <div className="input-field">
             <textarea
@@ -38,7 +38,7 @@ class CreateData extends Component {
               className="materialize-textarea"
               onChange={this.handleChange}
             />
-            <label htmlFor="content">Project Content</label>
+            <label htmlFor="content">Content</label>
           </div>
           <div className="input-field">
             <button className="btn pink lighten-1">Create</button>
@@ -57,7 +57,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    // passing in action createData imported in the top. Project is in the state. Dispatch as parameter.
+    // passing in action createData imported in the top. Item is in the state. Dispatch as parameter.
     createData: item => dispatch(createData(item))
   };
 };

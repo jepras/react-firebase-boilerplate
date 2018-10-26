@@ -38,7 +38,7 @@ const DataDetails = props => {
 const mapStateToProps = (state, ownProps) => {
   const id = ownProps.match.params.id;
   const data = state.firestore.data.data;
-  // check if we have any projects, if so, look for the one with the id in const above.
+  // check if we have any items in data, if so, look for the one with the id in const above.
   const item = data ? data[id] : null;
   return {
     // return it in object item. Now available in props.item
@@ -50,5 +50,5 @@ const mapStateToProps = (state, ownProps) => {
 export default compose(
   connect(mapStateToProps),
   // give page access to database state
-  firestoreConnect([{ collection: 'projects' }])
+  firestoreConnect([{ collection: 'data' }])
 )(DataDetails);

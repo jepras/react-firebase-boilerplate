@@ -25,7 +25,7 @@ class Dashboard extends Component {
 
 const mapStateToProps = state => {
   return {
-    // take in data from state,firestore,ordered,projects
+    // take in data from state,firestore,ordered,data
     data: state.firestore.ordered.data,
     auth: state.firebase.auth
   };

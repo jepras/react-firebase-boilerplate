@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const DataList = ({ data }) => {
   return (
-    <div className="project-list section">
+    <div className="data-list section">
       {data &&
         data.map(item => {
           return (
-            <Link to={'/project/' + item.id} key={item.id}>
+            <Link to={'/data/' + item.id} key={item.id}>
               <DataSummary item={item} />
             </Link>
           );
