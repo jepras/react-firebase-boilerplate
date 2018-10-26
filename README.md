@@ -5,8 +5,8 @@ This boiler plate is based on TheNetNinjas tutorial on [React/Firestore](https:/
 - Clone repository
 - npm install
 - [Create project in firebase](https://console.firebase.google.com/). Add script to fbConfig.js in src/config
-- Enable authentication in firebase.
-- Setup firestore.
+- Enable Email/Password authentication in firebase.
+- Setup firestore in test mode.
 - npm run build
 - Setup firebase hosting. Firebase login -> firebase init.
 - Move build files to chosen firebase deploy folder
