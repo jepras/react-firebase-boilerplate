@@ -4,7 +4,7 @@ This boiler plate is based on TheNetNinjas tutorial on [React/Firestore](https:/
 
 - Clone repository
 - npm install
-- Create project in firebase. Add script to fbConfig.js in src/config
+- [Create project in firebase](https://console.firebase.google.com/). Add script to fbConfig.js in src/config
 - Enable authentication in firebase.
 - Setup firestore.
 - npm run build
